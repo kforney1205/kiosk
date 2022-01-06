@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Simple Demo</title>
+<script type="text/javascript" src="https://pex-gcc.com/static/webrtc/js/pexrtc.js"></script>
+<script type="text/javascript" src="webui.js"></script>
+<script type='text/javascript'>
+window.onload = function()
+{
+    /* Params: conf node, conf name, bandwidth, display name, PIN */
+    initialise("pex-gcc.com", "mp738595", "1264", "Agent Video", "2021");
+}
+</script>
+</head>
+
+<body>
+<div width='100%' height='100%' style='overflow:auto' id="viewport">
+    <video width="100%" id="video" autoplay="autoplay" poster="https://pex-gcc.com/static/webrtc/img/spinner.gif"/><br>
+
+</div>
+    <button onclick="enableMute()" type="button">Mute Audio</button>
+ <button onclick="disableMute()" type="button">Enable Audio</button>
+ <script>
+var vid = document.getElementById("video");
+
+function enableMute() { 
+  vid.muted = true;
+} 
+
+function disableMute() { 
+  vid.muted = false;
+} 
+
+function checkMute() { 
+  alert(vid.muted);
+} 
+</script> 
+</body>
+</html>
