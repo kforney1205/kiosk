@@ -17,22 +17,8 @@ window.onload = function()
     <video width="100%" id="video" autoplay="autoplay" poster="https://pex-gcc.com/static/webrtc/img/spinner.gif"/><br>
 
 </div>
-    <button onclick="enableMute()" type="button">Mute Audio</button>
- <button onclick="disableMute()" type="button">Enable Audio</button>
- <script>
-var vid = document.getElementById("video");
-
-function enableMute() { 
-  vid.muted = true;
-} 
-
-function disableMute() { 
-  vid.muted = false;
-} 
-
-function checkMute() { 
-  alert(vid.muted);
-} 
-</script> 
+<button onclick="enableMute()" type="button">Mute Audio</button>
+<button onclick="disableMute()" type="button">Enable Audio</button>
+<button onclick="window.location='https://www.google.com';" type="button" id="id_disconnect" class="webrtcbutton btn-disconnect">
 </body>
 </html>

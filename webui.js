@@ -54,3 +54,17 @@ function initialise(node, conference, userbw, name, userpin) {
 
     rtc.makeCall(node, conference, name, bandwidth);
 }
+
+var vid = document.getElementById("video");
+
+function enableMute() { 
+  vid.muted = true;
+} 
+
+function disableMute() { 
+  vid.muted = false;
+} 
+
+function checkMute() { 
+  alert(vid.muted);
+} 
