@@ -12,9 +12,9 @@ body {
 }
 
 .navMenu {
-  position: relative;
-  top: 5%;
-  left: 5%;
+  position: fixed;
+  top: 20%;
+  left: 20%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
