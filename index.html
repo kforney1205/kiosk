@@ -4,8 +4,8 @@
 <script type="text/javascript" src="https://pex-gcc.com/static/webrtc/js/pexrtc.js"></script>
 <script type="text/javascript" src="webui.js"></script>
 <link rel="stylesheet" href="css/vidstyle.css">
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type='text/javascript'>
 window.onload = function()
 {
@@ -41,13 +41,19 @@ window.onload = function()
 </div> -->
 
 
-    <nav class="navMenu">
+    <!-- <nav class="navMenu">
       <a href="#" onclick="enableMute()">Mute Audio</a>
       <a href="#" onclick="disableMute()">Enable Audio</a>
       <a href="#" onlick="muteAudioStreams();" id="id_muteaudio" class="webrtcbutton btn-audio">Mute Mic</a>
       <a href="#" onclick="window.location='https://kforney1205.github.io/agentjoin/';" id="id_disconnect" class="webrtcbutton btn-disconnect">Disconnect</a>
       <div class="dot"></div>
-    </nav>
+    </nav> -->
+
+<div class="navbar">
+  <a href="#" onclick="enableMute()"><i class="fa fa-fw fa-headphones"></i>Mute Sound</a> 
+  <a href="#" onlick="muteAudioStreams();" id="id_muteaudio" class="webrtcbutton btn-audio"><i class="fa fa-fw fa-microphone-slash"></i>Mute Mic</a> 
+  <a class="active" href="#" onclick="window.location='https://kforney1205.github.io/agentjoin/';" id="id_disconnect" class="webrtcbutton btn-disconnect"><i class="fa fa-fw fa-sign-out"></i> Disconnect</a> 
+</div>
 
 <!-- <button onclick="enableMute()" type="button">Mute Audio Output</button>
 <button onclick="disableMute()" type="button">Enable Audio Output</button>
