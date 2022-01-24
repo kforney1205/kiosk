@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Simple Demo</title>
+<title>Agent Video App</title>
 <script type="text/javascript" src="https://pex-gcc.com/static/webrtc/js/pexrtc.js"></script>
 <script type="text/javascript" src="webui.js"></script>
 <link rel="stylesheet" href="css/vidstyle.css">
@@ -10,9 +10,10 @@
 window.onload = function()
 {
     /* Params: conf node, conf name, bandwidth, display name, PIN */
+
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
-     let videoid = "mp" + params.videoid
+    let videoid = "mp" + params.videoid
     initialise("pex-gcc.com", videoid, "1264", "Agent Video", "2021");
 }
 </script>
@@ -30,6 +31,8 @@ window.onload = function()
 <button onclick="disableMute()" type="button">Enable Audio Output</button>
 <button onlick="muteAudioStreams();" type="button" id="id_muteaudio" class="webrtcbutton btn-audio">Mute Microphone</button>
 <button onclick="window.location='https://kforney1205.github.io/agentjoin/';" type="button" id="id_disconnect" class="webrtcbutton btn-disconnect">Disconnect from Call</button> -->
+
+
 <div width='100%' height='100%' style='overflow:auto' id="viewport">
 <video width="90%" id="video" autoplay="autoplay"/><br>
 </div>

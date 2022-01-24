@@ -27,15 +27,6 @@ trans['TITLE_GUESTS'] = "Guests";
 
 /* ~~~ SETUP AND TEARDOWN ~~~ */
 
-var url = window.location.href;
-var params = url.substr(url.indexOf("?")+1).split("&");
-var i;
-var qp = {};
-    for (i=0;i<params.length;i++) {
-        var kv = params[i].split("=");
-        qp[kv[0]] = kv[1];
-    }
-
 
 function finalise(event) {
     rtc.disconnect();
