@@ -13,9 +13,9 @@ body {
 }
 
 .navMenu {
-  /* position: fixed; */
-  top: 5;
-  align-content:  center;
+  position: fixed;
+  top: 5px;
+  left:  25%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
