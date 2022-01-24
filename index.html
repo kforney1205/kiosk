@@ -3,16 +3,41 @@
 <title>Simple Demo</title>
 <script type="text/javascript" src="https://pex-gcc.com/static/webrtc/js/pexrtc.js"></script>
 <script type="text/javascript" src="webui.js"></script>
+<link rel="stylesheet" href="css/vidstyle.css">
 <script type='text/javascript'>
 window.onload = function()
 {
     /* Params: conf node, conf name, bandwidth, display name, PIN */
-    initialise("pex-gcc.com", "mp738595", "1264", "Agent Video", "2021");
+    initialise("pex-gcc.com", "mp", "1264", "Agent Video", "2021");
 }
 </script>
 </head>
 
 <body>
+
+<div class="wrapper">
+  <div class="icon mutemic">
+    <div class="tooltip">Mute Mic</div>
+    <span><i class="fab fa-mutemic-f"></i></span>
+  </div>
+  <div class="icon muteaudio">
+    <div class="tooltip">Mute Speaker</div>
+    <span><i class="fab fa-muteaudio"></i></span>
+  </div>
+  <div class="icon confdisconnect">
+    <div class="tooltip">Exit</div>
+    <span><i class="fab fa-confdisconnect"></i></span>
+  </div>
+  <div class="icon translator">
+    <div class="tooltip">Request Translator</div>
+    <span><i class="fab fa-translator"></i></span>
+  </div>
+  <div class="icon transfer">
+    <div class="tooltip">Transfer User </div>
+    <span><i class="fab fa-transfer"></i></span>
+  </div>
+</div>
+
 <button onclick="enableMute()" type="button">Mute Audio Output</button>
 <button onclick="disableMute()" type="button">Enable Audio Output</button>
 <button onlick="muteAudioStreams();" type="button" id="id_muteaudio" class="webrtcbutton btn-audio">Mute Microphone</button>
