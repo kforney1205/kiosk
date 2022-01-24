@@ -10,45 +10,16 @@
 window.onload = function()
 {
     /* Params: conf node, conf name, bandwidth, display name, PIN */
-    initialise("pex-gcc.com", "", "1264", "Agent Video", "2021");
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+     let videoid = "mp" + params.videoid
+    initialise("pex-gcc.com", videoid, "1264", "Agent Video", "2021");
 }
 </script>
+
 </head>
 
 <body>
-
-<!-- <div class="wrapper">
-  <div class="icon mutemic">
-    <div class="tooltip">Mute Mic</div>
-    <span><i class="fab fa-mutemic-f"></i></span>
-  </div>
-  <div class="icon muteaudio">
-    <div class="tooltip">Mute Speaker</div>
-    <span><i class="fab fa-muteaudio"></i></span>
-  </div>
-  <div class="icon confdisconnect">
-    <div class="tooltip">Exit</div>
-    <span><i class="fab fa-confdisconnect"></i></span>
-  </div>
-  <div class="icon translator">
-    <div class="tooltip">Request Translator</div>
-    <span><i class="fab fa-translator"></i></span>
-  </div>
-  <div class="icon transfer">
-    <div class="tooltip">Transfer User </div>
-    <span><i class="fab fa-transfer"></i></span>
-  </div>
-</div> -->
-
-
-    <!-- <nav class="navMenu">
-      <a href="#" onclick="enableMute()">Mute Audio</a>
-      <a href="#" onclick="disableMute()">Enable Audio</a>
-      <a href="#" onlick="muteAudioStreams();" id="id_muteaudio" class="webrtcbutton btn-audio">Mute Mic</a>
-      <a href="#" onclick="window.location='https://kforney1205.github.io/agentjoin/';" id="id_disconnect" class="webrtcbutton btn-disconnect">Disconnect</a>
-      <div class="dot"></div>
-    </nav> -->
-
 <div class="navbar">
   <a href="#" onclick="enableMute()"><i class="fa fa-fw fa-headphones"></i>Mute Sound</a> 
   <a href="#" onlick="muteAudioStreams();" id="id_muteaudio" class="webrtcbutton btn-audio"><i class="fa fa-fw fa-microphone-slash"></i>Mute Mic</a> 
