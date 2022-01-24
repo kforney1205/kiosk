@@ -7,14 +7,14 @@
 }
 
 body {
-  background: #272727;
+  background: #33383c;
   font-family: "Montserrat", sans-serif;
 }
 
 .navMenu {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+  top: 5%;
+  left: 5%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -22,11 +22,11 @@ body {
 .navMenu a {
   color: #f6f4e6;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.0em;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 300;
   display: inline-block;
-  width: 80px;
+  width: 120px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
