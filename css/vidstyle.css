@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +13,9 @@ body {
 }
 
 .navMenu {
-  position: fixed;
-  top: 20%;
-  left: 20%;
+  /* position: fixed; */
+  top: 5;
+  align-content:  center;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -22,11 +23,11 @@ body {
 .navMenu a {
   color: #f6f4e6;
   text-decoration: none;
-  font-size: 1.0em;
+  font-size: 15px;
   text-transform: uppercase;
   font-weight: 300;
   display: inline-block;
-  width: 120px;
+  width: 140px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
