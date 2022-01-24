@@ -41,17 +41,20 @@ window.onload = function()
 </div> -->
 
 
-<button class="btn btn-1 btn-sep icon-info">Button</button>
-<button class="btn btn-2 btn-sep icon-cart">Button</button>
-<button class="btn btn-3 btn-sep icon-heart">Button</button>
-<button class="btn btn-4 btn-sep icon-send">Button</button>
+    <nav class="navMenu">
+      <a href="#" onclick="enableMute()">Mute Audio</a>
+      <a href="#" onclick="disableMute()">Enable Audio</a>
+      <a href="#" onlick="muteAudioStreams();" id="id_muteaudio" class="webrtcbutton btn-audio">Mute Mic</a>
+      <a href="#" onclick="window.location='https://kforney1205.github.io/agentjoin/';" id="id_disconnect" class="webrtcbutton btn-disconnect">Disconnect</a>
+      <div class="dot"></div>
+    </nav>
 
-<button onclick="enableMute()" type="button">Mute Audio Output</button>
+<!-- <button onclick="enableMute()" type="button">Mute Audio Output</button>
 <button onclick="disableMute()" type="button">Enable Audio Output</button>
 <button onlick="muteAudioStreams();" type="button" id="id_muteaudio" class="webrtcbutton btn-audio">Mute Microphone</button>
-<button onclick="window.location='https://kforney1205.github.io/agentjoin/';" type="button" id="id_disconnect" class="webrtcbutton btn-disconnect">Disconnect from Call</button>
+<button onclick="window.location='https://kforney1205.github.io/agentjoin/';" type="button" id="id_disconnect" class="webrtcbutton btn-disconnect">Disconnect from Call</button> -->
 <div width='100%' height='100%' style='overflow:auto' id="viewport">
-<video width="100%" id="video" autoplay="autoplay"/><br>
+<video width="90%" id="video" autoplay="autoplay"/><br>
 </div>
 </body>
 </html>
